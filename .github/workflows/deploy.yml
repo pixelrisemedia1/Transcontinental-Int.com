@@ -20,24 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Reassemble Base44 export
+      - name: Prepare independent static site
         run: |
-          cat migration/site-source.tar.gz.part-* > /tmp/site-source.tar.gz
-          mkdir -p site
-          tar -xzf /tmp/site-source.tar.gz --strip-components=1 -C site
-      - name: Install and build
-        working-directory: site
-        env:
-          VITE_BASE_PATH: /Transcontinental-Int.com/
-        run: npm install --no-audit --no-fund && npm run build
-      - name: Enable deep route fallback
-        run: cp site/dist/index.html site/dist/404.html
+          mkdir -p site-dist/assets
+          cp index.html site-dist/index.html
+          cp assets/* site-dist/assets/
+          cp site-dist/index.html site-dist/404.html
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: site/dist
+          path: site-dist
       - id: deployment
         uses: actions/deploy-pages@v4
