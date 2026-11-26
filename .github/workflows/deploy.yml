@@ -1,21 +1,17 @@
 name: Deploy site to GitHub Pages
-
 on:
   push:
     branches: [main]
     paths-ignore:
       - ".github/workflows/**"
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   deploy:
     environment:
@@ -23,14 +19,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
         with:
-          path: .
-      - name: Deploy to GitHub Pages
-        id: deployment
+          node-version: 22
+      - name: Reassemble Base44 export
+        run: |
+          cat migration/site-source.tar.gz.part-* > /tmp/site-source.tar.gz
+          mkdir -p site
+          tar -xzf /tmp/site-source.tar.gz --strip-components=1 -C site
+      - name: Install and build
+        working-directory: site
+        env:
+          VITE_BASE_PATH: /Transcontinental-Int.com/
+        run: npm install --no-audit --no-fund && npm run build
+      - name: Enable deep route fallback
+        run: cp site/dist/index.html site/dist/404.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/dist
+      - id: deployment
         uses: actions/deploy-pages@v4
