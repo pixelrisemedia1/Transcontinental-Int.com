@@ -62,3 +62,7 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Confirmed the copy home currently uses in-page anchors for many links where the source navigates to dedicated pages; route and account parity remain open.
 - [ ] Verify every service, trading, documents, account, legal and tracking route and all source image/video/document assets.
 - [ ] Test quote form, search, cookie consent, AI assistant, accessibility controls and account behavior without Base44 services.
+
+### Transcontinental image verification detail
+- [x] Source homepage audit captured six distinct Unsplash photos and one Base44-hosted COO photo; the repository has seven local candidate images.
+- [ ] Map each local candidate to its source image (especially the three hero slides and COO photo) and verify exact crop, responsive variants, alt text, and successful loads for every route.
