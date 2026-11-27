@@ -80,3 +80,12 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Confirmed homepage includes Search, More, Login/Sign Up, freight service tabs, wood/metals cards, quote form, COO testimonial/photo, domestic/coastal section, document request, Google map, cookie and accessibility controls.
 - [x] Captured seven unique homepage photo roles: three hero/carousel images, sea freight, COO portrait, coastal shipping, road freight; plus an embedded map.
 - [ ] Inspect every linked route and the More menu, search, Login/Sign Up, TrackOrder, documents and legal destinations; verify which external services can be replaced independently.
+
+
+## Source route and document audit — additional verified detail
+- [x] Quote page is a 3-step flow; first step requires First Name and Email, with last name/company/phone optional.
+- [x] Documents section has audit, compliance, risk/safety and legal categories. Direct source document routes include DocumentAudit2023, DocumentAudit2024, DocumentAudit2025, DocumentAML, DocumentProhibited, DocumentRisk, DocumentSanctions, TermsConditions, PrivacyPolicy and CookiesPolicy.
+- [x] Verified source PDF destinations are Base44-hosted for 2023/2024/2025 audit reports, AML policy, Prohibited Cargo Policy, Risk Assessment Policy and Sanctions Compliance Policy. These exact files must be acquired from authorized source and stored locally before removing Base44 references.
+- [x] Fargo source product routes also inspected separately (inventory belongs in Fargo checklist).
+- [ ] Identify, acquire and locally host every source PDF; compare filename, version, page count, content, links and download/open behavior.
+- [ ] Inspect remaining document and legal text, embedded media, images and every route against source; no Base44 URL or runtime may remain.
