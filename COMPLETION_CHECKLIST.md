@@ -55,3 +55,10 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Check browser console, failed network requests, broken links, 404s, image loading and performance on desktop/mobile.
 - [ ] Verify GitHub Actions deployment succeeds; open the live deployed copy in a fresh session and directly load/refresh every route.
 - [ ] Record final verification date, deployed commit, public URL, and any remaining limitation. Custom domain/DNS is intentionally deferred until requested.
+
+## Verified audit notes — 2026-11-27
+- [x] Inspected source and copied homepages. Source home includes Search, Services & Trading, Company, Documents, More, Login/Sign Up, Track & Trace, freight tabs, wood/metals trading, quote form, COO quote/photo, documents request, contact/location and consent controls.
+- [x] Confirmed the source has a Base44-hosted COO image; the copy includes a local `assets/nikolai.webp` candidate.
+- [x] Confirmed the copy home currently uses in-page anchors for many links where the source navigates to dedicated pages; route and account parity remain open.
+- [ ] Verify every service, trading, documents, account, legal and tracking route and all source image/video/document assets.
+- [ ] Test quote form, search, cookie consent, AI assistant, accessibility controls and account behavior without Base44 services.
