@@ -74,3 +74,9 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Scan every repository file, document, metadata field and deployed network request for any remaining third-party/Base44 runtime or media dependency.
 - [ ] Confirm all listed local assets are source-matched and used in the appropriate page; unused files are not removed until their role is understood.
 - [ ] Verify the latest deployment for this checklist commit and smoke-test every route and asset after deployment.
+
+## Transcontinental source inventory (checked 2026-11-27)
+- [x] Confirmed homepage routes for Home, Services, Company, Documents, GetQuote, SeaFreight, WoodTrading, MetalsTrading, Contact, TrackOrder, Accessibility, TermsConditions and PrivacyPolicy.
+- [x] Confirmed homepage includes Search, More, Login/Sign Up, freight service tabs, wood/metals cards, quote form, COO testimonial/photo, domestic/coastal section, document request, Google map, cookie and accessibility controls.
+- [x] Captured seven unique homepage photo roles: three hero/carousel images, sea freight, COO portrait, coastal shipping, road freight; plus an embedded map.
+- [ ] Inspect every linked route and the More menu, search, Login/Sign Up, TrackOrder, documents and legal destinations; verify which external services can be replaced independently.
