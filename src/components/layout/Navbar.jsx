@@ -309,7 +309,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3 border-t border-gray-800 space-y-2">
                 {!isAuthenticated ? (
-                  <Link to={createPageUrl("Profile")} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2">
+                  <Link to={createPageUrl("Profile")} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2 w-full">
                     <LogIn className="w-4 h-4" /> Login / Sign Up
                   </Link>
                 ) : (
