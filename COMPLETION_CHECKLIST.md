@@ -101,3 +101,123 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Build in GitHub Actions and fix all errors before merge/deploy.
 - [ ] Open every route in a browser at desktop/mobile widths and compare typography, backgrounds, images, content, spacing, interactions and responsive behavior with the source.
 - [ ] Confirm the public deployment and its complete route and asset list; custom domain/DNS remains deferred by request.
+
+
+## Complete source route and visual review matrix
+
+All 37 registered page components are present in the transferred source and included in the React route registry. The source-code-presence check is complete; the visual comparison remains unchecked until each route has been opened at matching desktop/mobile widths.
+
+| Route | Original component present | Visual/source parity |
+|---|---:|---:|
+| Accessibility | [x] | [ ] |
+| AirFreight | [x] | [ ] |
+| Blog | [x] | [ ] |
+| BlogPostPage | [x] | [ ] |
+| CEOMessage | [x] | [ ] |
+| CarbonNeutral | [x] | [ ] |
+| Company | [x] | [ ] |
+| Contact | [x] | [ ] |
+| CookiesPolicy | [x] | [ ] |
+| CustomsClearance | [x] | [ ] |
+| DocumentAML | [x] | [ ] |
+| DocumentAudit2023 | [x] | [ ] |
+| DocumentAudit2024 | [x] | [ ] |
+| DocumentAudit2025 | [x] | [ ] |
+| DocumentCompliance | [x] | [ ] |
+| DocumentProhibited | [x] | [ ] |
+| DocumentRisk | [x] | [ ] |
+| DocumentSanctions | [x] | [ ] |
+| Documents | [x] | [ ] |
+| DomesticShipping | [x] | [ ] |
+| FourPL | [x] | [ ] |
+| GetQuote | [x] | [ ] |
+| GlobalNetwork | [x] | [ ] |
+| Home | [x] | [ ] |
+| MetalsTrading | [x] | [ ] |
+| PrivacyPolicy | [x] | [ ] |
+| Profile | [x] | [ ] |
+| ProjectLogistics | [x] | [ ] |
+| RailFreight | [x] | [ ] |
+| RoadFreight | [x] | [ ] |
+| SeaFreight | [x] | [ ] |
+| Services | [x] | [ ] |
+| TermsConditions | [x] | [ ] |
+| Testimonials | [x] | [ ] |
+| TrackOrder | [x] | [ ] |
+| Warehousing | [x] | [ ] |
+| WoodTrading | [x] | [ ] |
+
+## Image-by-image source inventory
+
+The transferred source references 85 Unsplash image URLs across 56 distinct photo IDs. The original URLs and source page placements are retained. The COO portrait is locally hosted. No video URL, video file, video embed or poster was found in the 131 inspected text/source files.
+
+| Image source ID | Source page/component placements | Visual and responsive check |
+|---|---|---:|
+| `photo-1554224155-6726b3ff858f` | Documents, DocumentPageLayout, Blog, BlogPostPage | [ ] |
+| `photo-1606836591695-4d58a73eba1e` | CEOQuote | [ ] |
+| `photo-1619468129361-605ebea04b44` | DomesticSection | [ ] |
+| `photo-1605745341112-85968b19335b` | HeroSection, Blog, BlogPostPage | [ ] |
+| `photo-1578575437130-527eed3abbec` | HeroSection, DomesticShipping, GetQuote | [ ] |
+| `photo-1529260830199-42c24126f198` | HeroSection, Blog, BlogPostPage | [ ] |
+| `photo-1570710891163-6d3b5c47248b` | QuoteCallout, Services | [ ] |
+| `photo-1519003300449-424ad0405076` | RoadCTA | [ ] |
+| `photo-1494412574643-ff11b0a5c1c3` | ServicesPreview, DomesticShipping, SeaFreight | [ ] |
+| `photo-1474487548417-781cb71495f3` | ServicesPreview, Blog, BlogPostPage | [ ] |
+| `photo-1436491865332-7a61a109cc05` | ServicesPreview | [ ] |
+| `photo-1601584115197-04ecc0da31d7` | ServicesPreview, Company, RoadFreight | [ ] |
+| `photo-1586528116311-ad8dd3c8310d` | ServicesPreview, Blog, BlogPostPage | [ ] |
+| `photo-1573164713988-8665fc963095` | Accessibility | [ ] |
+| `photo-1569154941061-e231b4aa8da2` | AirFreight | [ ] |
+| `photo-1556388158-158ea5ccacbd` | AirFreight | [ ] |
+| `photo-1464037866556-6812c9d1c72e` | AirFreight | [ ] |
+| `photo-1466611653911-95081537e5b7` | Blog, BlogPostPage | [ ] |
+| `photo-1565793979169-ee7c33d6a741` | Blog, BlogPostPage | [ ] |
+| `photo-1504307651254-35680f356dfd` | Blog, BlogPostPage, ProjectLogistics | [ ] |
+| `photo-1566422972567-39dbc8b67b13` | Blog, BlogPostPage | [ ] |
+| `photo-1497366811353-6870744d04b2` | Blog, CEOMessage | [ ] |
+| `photo-1448375240586-882707db888b` | CarbonNeutral, WoodTrading | [ ] |
+| `photo-1497435334941-8c899ee9e8e9` | CarbonNeutral | [ ] |
+| `photo-1441974231531-c6227db76b6e` | CarbonNeutral | [ ] |
+| `photo-1423666639041-f56000c27a9a` | Contact | [ ] |
+| `photo-1450101499163-c8848c66ca85` | CustomsClearance | [ ] |
+| `photo-1554224155-8d04cb21cd6c` | CustomsClearance | [ ] |
+| `photo-1516738901171-8eb4fc13bd20` | DomesticShipping | [ ] |
+| `photo-1520607162513-77705c0f0d4a` | FourPL | [ ] |
+| `photo-1454165804606-c3d57bc86b40` | FourPL | [ ] |
+| `photo-1460925895917-afdab827c52f` | FourPL | [ ] |
+| `photo-1536599018102-9f803c140fc1` | GlobalNetwork | [ ] |
+| `photo-1485871981521-5b1fd3805eee` | GlobalNetwork | [ ] |
+| `photo-1467269204594-9661b134dd2b` | GlobalNetwork | [ ] |
+| `photo-1512453979798-5ea266f8880c` | GlobalNetwork | [ ] |
+| `photo-1451187580459-43490279c0fa` | GlobalNetwork | [ ] |
+| `photo-1567789884554-0b844b597180` | MetalsTrading | [ ] |
+| `photo-1504328345606-18bbc8c9d7d1` | MetalsTrading | [ ] |
+| `photo-1528918652533-dfdb3f368093` | MetalsTrading | [ ] |
+| `photo-1497366216548-37526070297c` | Profile | [ ] |
+| `photo-1541888946425-d81bb19240f5` | ProjectLogistics | [ ] |
+| `photo-1501704163333-86d3832cd4ea` | RailFreight | [ ] |
+| `photo-1622340973965-6370cd932bd7` | RailFreight | [ ] |
+| `photo-1596245296613-cfcdd8490086` | RailFreight | [ ] |
+| `photo-1519003722824-194d4455a60c` | RoadFreight | [ ] |
+| `photo-1724597500306-a4cbb7d1324e` | SeaFreight | [ ] |
+| `photo-1696287146802-af8ccce45601` | SeaFreight | [ ] |
+| `photo-1436491865332-7a61a109db05` | Services | [ ] |
+| `photo-1521737604893-d14cc237f11d` | Testimonials | [ ] |
+| `photo-1494412574643-ff11b0a5eb19` | TrackOrder | [ ] |
+| `photo-1587293852726-70cdb56c2866` | Warehousing | [ ] |
+| `photo-1553413077-190dd305871c` | Warehousing | [ ] |
+| `photo-1587371169587-0ad13dea4be2` | WoodTrading | [ ] |
+| `photo-1513836279014-a89f7a76ae86` | WoodTrading | [ ] |
+| Local COO portrait `TC_Nikolai.png` | CEOQuote, CEOMessage, Company | [ ] |
+
+## Standalone behavior and production checks
+
+- [x] Active application code contains no Base44 SDK imports, Base44 API calls, Base44-hosted media URLs, Base44 auth/database wiring, or Base44 backend scaffold. The full source scan found only checklist/workflow documentation references.
+- [x] The exact three audit PDFs and four policy PDFs referenced by source are stored in `public/assets/documents/`; the source's HTML-only Compliance Policy route remains HTML without a PDF.
+- [x] GitHub Actions production build and Pages artifact upload succeeded on the migration branch.
+- [ ] Final Pages deployment for the latest main commit succeeds; open the deployed site and verify the returned Pages URL.
+- [ ] Compare all route visuals, the source image placements/crops, responsive layouts, and direct-route refreshes on the deployed site.
+- [ ] Verify quote/contact mailto handoff in a browser; delivery is not server-backed.
+- [ ] Verify the static tracking limitation is clear and no tracking result is fabricated.
+- [ ] Decide and configure a real server-backed login/form inbox only if account sign-in or cross-device storage is required; current profile/drafts are browser-local.
+- [ ] Confirm custom domain/DNS when the user is ready; deferred by request.
