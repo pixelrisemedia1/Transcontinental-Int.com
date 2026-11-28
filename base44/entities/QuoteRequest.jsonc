@@ -1,0 +1,69 @@
+{
+  "name": "QuoteRequest",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "service_type": {
+      "type": "string",
+      "enum": [
+        "sea_freight",
+        "air_freight",
+        "road_freight",
+        "rail_freight",
+        "warehousing",
+        "wood_trading",
+        "metals_trading",
+        "customs_clearance",
+        "project_logistics",
+        "other"
+      ]
+    },
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "cargo_description": {
+      "type": "string"
+    },
+    "weight_kg": {
+      "type": "number"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "quoted",
+        "accepted",
+        "declined"
+      ],
+      "default": "pending"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "first_name",
+    "email",
+    "service_type"
+  ]
+}
