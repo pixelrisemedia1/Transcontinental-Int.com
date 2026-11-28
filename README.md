@@ -1,39 +1,20 @@
-**Welcome to your Base44 project** 
+# Transcontinental Group International website
 
-**About**
+This repository contains the independently buildable React/Vite version of the Transcontinental website source. The transferred site includes 37 registered routes and the original shared layout and styling.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Development
 
-This project contains everything you need to run your app locally.
+- Node.js 22+
+- `npm install`
+- `npm run dev`
+- `npm run build`
 
-**Edit the code in your local development environment**
+## GitHub Pages
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+The project is built with the repository path `/Transcontinental-Int.com/`. GitHub Actions creates a production build and adds an SPA fallback so route links can be loaded directly. Pushing to `main` deploys the site; the migration working branch only builds.
 
-**Prerequisites:** 
+## Independent behavior
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+The site contains no Base44 SDK or runtime. Profile preferences, demo quote drafts, blog drafts and testimonials are stored in the visitor's browser. Contact and quote forms open the visitor's email application with the form details addressed to the published Transcontinental email. This static site does not provide server-backed user accounts, cross-device request history, or a hosted form inbox.
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
-
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+Images still referenced from Unsplash are external source URLs; the source executive portrait and policy/audit PDFs are stored in the repository.

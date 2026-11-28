@@ -2,7 +2,7 @@
 
 Source: https://transcontinental-int.com
 Repository: pixelrisemedia1/Transcontinental-Int.com
-Status: IN PROGRESS — unchecked items are not verified complete.
+Status: IN PROGRESS — source code transfer and Base44 decoupling are underway; visual parity and production verification remain open.
 Rule: Check an item only after comparing against the source or testing the public deployment and recording evidence in the commit/issue/notes.
 
 ## 1. Routes and source pages
@@ -33,13 +33,14 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Inventory all source videos, posters, logos, route/port photos, document thumbnails, badges and icons; map each one to its page
 
 ## 3. Site-specific content and functionality
-- [ ] Rebuild every freight, trading, domestic/coastal, quote, tracking, document, profile, contact and legal route found in source
+- [x] Import all 37 distinct registered page components and the shared source layout, route registry, and styles into the working branch; visual comparison is still open
 - [ ] Verify route and service names, section copy, operational claims, statistics, port/coverage details and contact information exactly
 - [ ] Implement quote flow with cargo/service fields, validation and real authorized delivery
 - [ ] Implement tracking flow with a valid lookup service or clear truthful unavailable state
 - [ ] Verify every document listing and downloadable file, including file version, type, page count and working download
 - [ ] Review video embeds, transcripts/captions, poster frames, player controls and mobile behavior if present
-- [ ] Replace all Base44-hosted media and remove Base44 runtime, SDK, APIs, auth, database and form dependencies from the copy
+- [x] Replace all identified Base44 media URLs in active route components with local repo assets; remove the Base44 SDK and runtime dependency from the site build.
+- [ ] Scan repository metadata and the built public requests after cleanup to confirm no Base44 references remain.
 - [ ] Confirm person/employee photos and testimonial quotes are source-accurate and authorized
 - [ ] Recreate nav menus, service detail routes, 24/7 support links, phone/email, map and footer links
 
@@ -58,13 +59,13 @@ Rule: Check an item only after comparing against the source or testing the publi
 
 ## Verified audit notes — 2026-11-27
 - [x] Inspected source and copied homepages. Source home includes Search, Services & Trading, Company, Documents, More, Login/Sign Up, Track & Trace, freight tabs, wood/metals trading, quote form, COO quote/photo, documents request, contact/location and consent controls.
-- [x] Confirmed the source has a Base44-hosted COO image; the copy includes a local `assets/nikolai.webp` candidate.
+- [x] Replaced the source COO image URL with the exact locally vendored source file at `public/assets/TC_Nikolai.png`.
 - [x] Confirmed the copy home currently uses in-page anchors for many links where the source navigates to dedicated pages; route and account parity remain open.
 - [ ] Verify every service, trading, documents, account, legal and tracking route and all source image/video/document assets.
-- [ ] Test quote form, search, cookie consent, AI assistant, accessibility controls and account behavior without Base44 services.
+- [ ] Verify quote and contact email handoff, search, cookie consent, local support panel, accessibility controls and browser-local profile behavior.
 
 ### Transcontinental image verification detail
-- [x] Source homepage audit captured six distinct Unsplash photos and one Base44-hosted COO photo; the repository has seven local candidate images.
+- [x] The source has one Base44-hosted executive image and seven Base44-hosted/linked PDFs; the executive image and all seven PDFs are now vendored locally. Unsplash image URLs are still external.
 - [ ] Map each local candidate to its source image (especially the three hero slides and COO photo) and verify exact crop, responsive variants, alt text, and successful loads for every route.
 
 ## Repository-level checks
@@ -87,5 +88,16 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Documents section has audit, compliance, risk/safety and legal categories. Direct source document routes include DocumentAudit2023, DocumentAudit2024, DocumentAudit2025, DocumentAML, DocumentProhibited, DocumentRisk, DocumentSanctions, TermsConditions, PrivacyPolicy and CookiesPolicy.
 - [x] Verified source PDF destinations are Base44-hosted for 2023/2024/2025 audit reports, AML policy, Prohibited Cargo Policy, Risk Assessment Policy and Sanctions Compliance Policy. These exact files must be acquired from authorized source and stored locally before removing Base44 references.
 - [x] Fargo source product routes also inspected separately (inventory belongs in Fargo checklist).
-- [ ] Identify, acquire and locally host every source PDF; compare filename, version, page count, content, links and download/open behavior.
+- [x] Acquire and locally host the three audit PDFs and four policy PDFs referenced by the source.
+- [ ] Compare each local PDF's filename, version, page count, contents and public open/download behavior against the source.
 - [ ] Inspect remaining document and legal text, embedded media, images and every route against source; no Base44 URL or runtime may remain.
+
+
+## Migration progress — 2026-11-28
+- [x] Copied all 142 Base44 text source files into branch `tcl-base44-transfer`; route registry contains 37 distinct pages.
+- [x] Removed `@base44/sdk` and `@base44/vite-plugin` from the Vite build configuration and package manifest.
+- [x] Replaced SDK calls with browser-local storage and email handoff; no Base44 backend requests are part of the new app shell.
+- [x] Added a Vite build plus GitHub Pages SPA fallback workflow. Branch builds are intended to run without deploying; main deploys after merge.
+- [ ] Build in GitHub Actions and fix all errors before merge/deploy.
+- [ ] Open every route in a browser at desktop/mobile widths and compare typography, backgrounds, images, content, spacing, interactions and responsive behavior with the source.
+- [ ] Confirm the public deployment and its complete route and asset list; custom domain/DNS remains deferred by request.
