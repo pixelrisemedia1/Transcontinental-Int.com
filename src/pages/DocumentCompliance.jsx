@@ -6,7 +6,7 @@ export default function DocumentCompliance() {
     <DocumentPageLayout
       title="Compliance Policy"
       subtitle="International trade laws, regulations, and ethical business standards."
-      pdfUrl=""
+      pdfUrl={`${import.meta.env.BASE_URL}assets/documents/SanctionsCompliancePolicy.pdf`}
     >
       <h3>Scope</h3>
       <p>This Compliance Policy applies to all employees, agents, contractors, and third-party representatives acting on behalf of TransContinental Group International Limited across all jurisdictions where we operate.</p>

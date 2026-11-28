@@ -93,7 +93,7 @@ export default function Company() {
             "We don't just move cargo; we move businesses forward."
           </blockquote>
           <div className="mt-8 flex items-center justify-center gap-4">
-            <img src="https://media.base44.com/images/public/69d1d2636276e47743e6d20c/443eedd56_TC_Nikolai_.png" alt="Nikolai Belov" className="w-16 h-16 rounded-full object-cover border-2 border-cyan-400/30" />
+            <img src="/Transcontinental-Int.com/assets/TC_Nikolai.png" alt="Nikolai Belov" className="w-16 h-16 rounded-full object-cover border-2 border-cyan-400/30" />
             <div className="text-left">
               <p className="text-white font-semibold">Nikolai Belov</p>
               <p className="text-cyan-400 text-sm">Chief Operating Officer (COO)</p>
