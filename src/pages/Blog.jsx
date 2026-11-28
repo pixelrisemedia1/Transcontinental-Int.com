@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PageHero from "../components/shared/PageHero";
 import { Calendar, Clock, Tag, ArrowRight, Plus, X, Upload, Loader2 } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import { useNavigate } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 
@@ -146,7 +146,7 @@ function WritePostModal({ onClose, onSaved }) {
     const file = e.target.files[0];
     if (!file) return;
     setUploading(true);
-    const { file_url } = await base44.integrations.Core.UploadFile({ file });
+    const { file_url } = await siteServices.integrations.Core.UploadFile({ file });
     setForm(f => ({ ...f, image_url: file_url }));
     setUploading(false);
   };
@@ -154,7 +154,7 @@ function WritePostModal({ onClose, onSaved }) {
   const handleSave = async () => {
     if (!form.title || !form.content) return;
     setSaving(true);
-    await base44.entities.BlogPost.create({ ...form, published: true });
+    await siteServices.entities.BlogPost.create({ ...form, published: true });
     setSaving(false);
     onSaved();
   };
@@ -221,13 +221,13 @@ export default function Blog() {
 
   useEffect(() => {
     loadPosts();
-    base44.auth.isAuthenticated().then(async auth => {
-      if (auth) { const u = await base44.auth.me(); setIsAdmin(u?.role === "admin"); }
+    siteServices.auth.isAuthenticated().then(async auth => {
+      if (auth) { const u = await siteServices.auth.me(); setIsAdmin(u?.role === "admin"); }
     });
   }, []);
 
   const loadPosts = async () => {
-    const posts = await base44.entities.BlogPost.filter({ published: true }, "-created_date");
+    const posts = await siteServices.entities.BlogPost.filter({ published: true }, "-created_date");
     setDbPosts(posts);
   };
 

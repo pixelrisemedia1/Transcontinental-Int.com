@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ChevronLeft, Calendar, Clock } from "lucide-react";
 import PageHero from "../components/shared/PageHero";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import { createPageUrl } from "@/utils";
 
 const STATIC_POSTS = [
@@ -137,7 +137,7 @@ export default function BlogPostPage() {
       }
       // Try DB post
       try {
-        const posts = await base44.entities.BlogPost.filter({ published: true });
+        const posts = await siteServices.entities.BlogPost.filter({ published: true });
         const found = posts.find(p => String(p.id) === postId);
         setPost(found || null);
       } catch (_) {}

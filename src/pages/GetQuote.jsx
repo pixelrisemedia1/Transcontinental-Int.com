@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PageHero from "../components/shared/PageHero";
 import CaptchaField from "../components/shared/CaptchaField";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -34,9 +34,9 @@ export default function GetQuote() {
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
-    base44.auth.isAuthenticated().then(async auth => {
+    siteServices.auth.isAuthenticated().then(async auth => {
       if (auth) {
-        const u = await base44.auth.me();
+        const u = await siteServices.auth.me();
         setForm(f => ({
           ...f,
           first_name: u.full_name?.split(" ")[0] || f.first_name,
@@ -58,7 +58,12 @@ export default function GetQuote() {
     const data = { ...form };
     if (data.weight_kg) data.weight_kg = parseFloat(data.weight_kg);
     else delete data.weight_kg;
-    await base44.entities.QuoteRequest.create(data);
+    await siteServices.entities.QuoteRequest.create(data);
+    const body = Object.entries(data).map(([key, value]) => key.replaceAll("_", " ") + ": " + value).join("\n");
+    const mailto = new URL("mailto:tcl@transcontinental-int.com");
+    mailto.searchParams.set("subject", "Freight quote request");
+    mailto.searchParams.set("body", body);
+    window.location.href = mailto.toString();
     setSending(false);
     setSubmitted(true);
   };
@@ -72,7 +77,7 @@ export default function GetQuote() {
             <CheckCircle2 className="w-20 h-20 text-green-500 mx-auto" />
           </motion.div>
           <h2 className="text-3xl font-bold text-gray-900 mt-6">Thank You!</h2>
-          <p className="text-gray-500 mt-4 text-lg">We've received your quote request and will get back to you as soon as possible with an approximate price.</p>
+          <p className="text-gray-500 mt-4 text-lg">Your email app should open with your quote request ready. Send the email to complete your request.</p>
           <Button onClick={() => { setSubmitted(false); setStep(1); setForm({ first_name: "", last_name: "", company: "", phone: "", email: "", service_type: "", origin: "", destination: "", cargo_description: "", weight_kg: "", dimensions: "", notes: "" }); }} variant="outline" className="mt-8">
             Submit Another Quote
           </Button>

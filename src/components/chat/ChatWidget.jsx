@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, Loader2, Bot, Paperclip, AlertTriangle, ChevronDown } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import ReactMarkdown from "react-markdown";
 import { useNavigate } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -27,7 +27,7 @@ export default function ChatWidget() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    base44.auth.isAuthenticated().then(setIsAuth);
+    siteServices.auth.isAuthenticated().then(setIsAuth);
   }, []);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function ChatWidget() {
 
   useEffect(() => {
     if (!conversation) return;
-    const unsub = base44.agents.subscribeToConversation(conversation.id, (data) => {
+    const unsub = siteServices.agents.subscribeToConversation(conversation.id, (data) => {
       const msgs = data.messages || [];
       setMessages(msgs);
       const lastAI = [...msgs].reverse().find(m => m.role === "assistant" && m.content);
@@ -51,14 +51,14 @@ export default function ChatWidget() {
   }, [conversation?.id]);
 
   const startConversation = async () => {
-    const conv = await base44.agents.createConversation({
+    const conv = await siteServices.agents.createConversation({
       agent_name: "support_assistant",
       metadata: { name: "AI Assistant Chat" },
     });
     setConversation(conv);
     setMessages([{
       role: "assistant",
-      content: "Hello! I'm Robert, your AI assistant. I can help answer questions, search the web, and navigate this site. How can I help you today?"
+      content: "Hello! I'm Robert. I can help you find services and contact our team. How can I help today?"
     }]);
   };
 
@@ -74,7 +74,7 @@ export default function ChatWidget() {
     const urls = [];
     const previews = [];
     for (const file of files) {
-      const { file_url } = await base44.integrations.Core.UploadFile({ file });
+      const { file_url } = await siteServices.integrations.Core.UploadFile({ file });
       urls.push(file_url);
       if (file.type.startsWith("image/")) {
         previews.push({ type: "image", url: URL.createObjectURL(file), name: file.name });
@@ -106,11 +106,15 @@ export default function ChatWidget() {
     if (webAccess) fullContent += "\n[web_access:true]";
     if (screenControl) fullContent += "\n[screen_control:true]";
 
-    await base44.agents.addMessage(conversation, {
-      role: "user",
-      content: fullContent,
-      file_urls: urls.length ? urls : undefined,
-    });
+    const lower = text.toLowerCase();
+    const answer = /quote|price|rate/.test(lower)
+      ? "For pricing, use the Get A Quote page or email tcl@transcontinental-int.com."
+      : /track|shipment|order/.test(lower)
+        ? "For shipment updates, use Track Order or email tcl@transcontinental-int.com."
+        : /contact|person|team|human/.test(lower)
+          ? "Our team can help on the Contact Us page or at tcl@transcontinental-int.com."
+          : "I can help with freight, logistics, and trading information. Visit Services or contact tcl@transcontinental-int.com. This assistant works without an online AI service.";
+    setMessages(prev => [...prev, { role: "user", content: fullContent }, { role: "assistant", content: answer }]);
     setSending(false);
   };
 
@@ -157,7 +161,7 @@ export default function ChatWidget() {
                   <p style={{ color: "white", fontSize: "14px", fontWeight: "700", margin: 0, letterSpacing: "0.01em" }}>Robert</p>
                   <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "2px" }}>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22c55e", display: "inline-block" }} />
-                    <p style={{ color: "#94a3b8", fontSize: "10px", margin: 0 }}>Online · Powered by AI</p>
+                    <p style={{ color: "#94a3b8", fontSize: "10px", margin: 0 }}>Online · Local support</p>
                   </div>
                 </div>
               </div>

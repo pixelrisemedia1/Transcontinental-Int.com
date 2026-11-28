@@ -4,7 +4,7 @@ import PageHero from "../components/shared/PageHero";
 import { Star, Quote, Plus, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 
 const STATIC_TESTIMONIALS = [
   { id: "s1", name: "Marcus Bauer", title: "Head of Supply Chain", company: "Bauer Industrial GmbH", location: "Munich, Germany", rating: 5, text: "We've been working with TransContinental for over three years for our China-to-Europe rail freight needs. What sets them apart is the level of transparency and communication throughout the entire transit. We always know exactly where our cargo is, and their team handles customs at the China-Kazakhstan border without any issues. Our transit times have improved by 20% compared to our previous forwarder. I recommend them without hesitation.", service: "Rail Freight" },
@@ -63,7 +63,7 @@ function WriteTestimonialModal({ onClose, onSaved }) {
   const handleSave = async () => {
     if (!form.name || !form.text) return;
     setSaving(true);
-    await base44.entities.Testimonial.create({ ...form, published: true });
+    await siteServices.entities.Testimonial.create({ ...form, published: true });
     setSaving(false);
     onSaved();
   };
@@ -115,13 +115,13 @@ export default function Testimonials() {
 
   useEffect(() => {
     loadTestimonials();
-    base44.auth.isAuthenticated().then(async auth => {
-      if (auth) { const u = await base44.auth.me(); setIsAdmin(u?.role === "admin"); }
+    siteServices.auth.isAuthenticated().then(async auth => {
+      if (auth) { const u = await siteServices.auth.me(); setIsAdmin(u?.role === "admin"); }
     });
   }, []);
 
   const loadTestimonials = async () => {
-    const items = await base44.entities.Testimonial.filter({ published: true }, "-created_date");
+    const items = await siteServices.entities.Testimonial.filter({ published: true }, "-created_date");
     setDbTestimonials(items);
   };
 

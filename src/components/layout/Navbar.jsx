@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Menu, X, Package, ChevronDown, LogIn, User, LogOut } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import TCLogo from "./TCLogo";
 import NavSearch from "./NavSearch";
 
@@ -90,9 +90,9 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    base44.auth.isAuthenticated().then(async (auth) => {
+    siteServices.auth.isAuthenticated().then(async (auth) => {
       setIsAuthenticated(auth);
-      if (auth) { try { const u = await base44.auth.me(); setUser(u); } catch (_) {} }
+      if (auth) { try { const u = await siteServices.auth.me(); setUser(u); } catch (_) {} }
     });
   }, []);
 
@@ -249,7 +249,7 @@ export default function Navbar() {
                         <Package className="w-4 h-4" /> Preferences
                       </Link>
                       <button
-                        onClick={() => base44.auth.logout()}
+                        onClick={() => siteServices.auth.logout()}
                         className="w-full flex items-center gap-2 px-4 py-3 text-sm text-red-400 hover:bg-white/5 transition-colors border-t border-gray-700"
                       >
                         <LogOut className="w-4 h-4" /> Sign Out
@@ -260,7 +260,7 @@ export default function Navbar() {
               </>
             ) : (
               <button
-                onClick={() => base44.auth.redirectToLogin()}
+                onClick={() => siteServices.auth.redirectToLogin()}
                 className="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-300 hover:text-white transition-all"
               >
                 <LogIn className="w-4 h-4 text-cyan-400" />
@@ -312,7 +312,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3 border-t border-gray-800 space-y-2">
                 {!isAuthenticated ? (
-                  <button onClick={() => { setMobileOpen(false); base44.auth.redirectToLogin(); }} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2 w-full">
+                  <button onClick={() => { setMobileOpen(false); siteServices.auth.redirectToLogin(); }} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2 w-full">
                     <LogIn className="w-4 h-4" /> Login / Sign Up
                   </button>
                 ) : (
@@ -320,7 +320,7 @@ export default function Navbar() {
                     <Link to={createPageUrl("Profile")} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2">
                       <User className="w-4 h-4" /> My Account
                     </Link>
-                    <button onClick={() => base44.auth.logout()} className="flex items-center gap-2 text-red-400 text-sm px-4 py-2 w-full">
+                    <button onClick={() => siteServices.auth.logout()} className="flex items-center gap-2 text-red-400 text-sm px-4 py-2 w-full">
                       <LogOut className="w-4 h-4" /> Sign Out
                     </button>
                   </>

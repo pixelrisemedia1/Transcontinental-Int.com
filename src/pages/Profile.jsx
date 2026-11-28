@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { base44 } from "@/api/base44Client";
+import { siteServices } from "@/api/localClient";
 import { motion } from "framer-motion";
 import PageHero from "../components/shared/PageHero";
 import { User, Building, Phone, Mail, Globe, Eye, Cookie, Bell, Clock, Package, MessageSquare, Save, Loader2 } from "lucide-react";
@@ -24,27 +24,12 @@ export default function Profile() {
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
-    const init = async () => {
-      const isAuth = await base44.auth.isAuthenticated();
-      if (!isAuth) { base44.auth.redirectToLogin(window.location.href); return; }
-      const u = await base44.auth.me();
-      setUser(u);
-      setForm({
-        full_name: u.full_name || "",
-        email: u.email || "",
-        company: u.company || "",
-        phone: u.phone || "",
-        language: u.language || "en",
-        position: u.position || "",
-      });
-      // Load user's quote requests
-      try {
-        const q = await base44.entities.QuoteRequest.filter({ created_by: u.email }, "-created_date", 20);
-        setQuotes(q);
-      } catch {}
-      setLoading(false);
-    };
-    init();
+    let savedProfile = {};
+    try { savedProfile = JSON.parse(localStorage.getItem("tcl-profile") || "{}"); } catch {}
+    setUser(savedProfile);
+    setForm(current => ({ ...current, ...savedProfile }));
+    siteServices.entities.QuoteRequest.list().then(setQuotes).catch(() => setQuotes([]));
+    setLoading(false);
   }, []);
 
   // Check if we should open accessibility tab from URL
@@ -55,7 +40,7 @@ export default function Profile() {
 
   const handleSave = async () => {
     setSaving(true);
-    await base44.auth.updateMe({ company: form.company, phone: form.phone, language: form.language, position: form.position });
+    const next = { ...form }; localStorage.setItem("tcl-profile", JSON.stringify(next)); setUser(next);
     setSaving(false);
     setSaved(true);
     setTimeout(() => setSaved(false), 2500);
@@ -88,12 +73,12 @@ export default function Profile() {
           {activeTab === "profile" && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white rounded-b-2xl rounded-tr-2xl shadow-sm border border-gray-100 p-8">
               <h2 className="text-xl font-bold text-gray-900 mb-6">Personal & Company Information</h2>
-              <p className="text-sm text-gray-500 mb-6">This information will be used to auto-fill quote request forms and contact forms. All fields are optional.</p>
+              <p className="text-sm text-gray-500 mb-6">This information is saved in this browser only. There is no online account or server sync. All fields are optional.</p>
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1.5 block">Full Name</label>
                   <Input value={form.full_name} disabled className="bg-gray-50 text-gray-500" placeholder="From your account" />
-                  <p className="text-xs text-gray-400 mt-1">Name is managed by your account provider</p>
+                  <p className="text-xs text-gray-400 mt-1">Saved in this browser only</p>
                 </div>
                 <div>
                   <label className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-1.5 block">Email</label>
