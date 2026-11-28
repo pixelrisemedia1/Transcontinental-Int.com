@@ -109,83 +109,43 @@ All 37 registered page components are present in the transferred source and incl
 
 | Route | Original component present | Source styling code matches | Rendered visual QA |
 |---|---:|---:|---:|
-| Accessibility | [x] | [ ] |
-| AirFreight | [x] | [ ] |
-| Blog | [x] | [ ] |
-| BlogPostPage | [x] | [ ] |
-| CEOMessage | [x] | [ ] |
-| CarbonNeutral | [x] | [ ] |
-| Company | [x] | [ ] |
-| Contact | [x] | [ ] |
-| CookiesPolicy | [x] | [ ] |
-| CustomsClearance | [x] | [ ] |
-| DocumentAML | [x] | [ ] |
-| DocumentAudit2023 | [x] | [ ] |
-| DocumentAudit2024 | [x] | [ ] |
-| DocumentAudit2025 | [x] | [ ] |
-| DocumentCompliance | [x] | [ ] |
-| DocumentProhibited | [x] | [ ] |
-| DocumentRisk | [x] | [ ] |
-| DocumentSanctions | [x] | [ ] |
-| Documents | [x] | [ ] |
-| DomesticShipping | [x] | [ ] |
-| FourPL | [x] | [ ] |
-| GetQuote | [x] | [ ] |
-| GlobalNetwork | [x] | [ ] |
-| Home | [x] | [ ] |
-| MetalsTrading | [x] | [ ] |
-| PrivacyPolicy | [x] | [ ] |
-| Profile | [x] | [ ] |
-| ProjectLogistics | [x] | [ ] |
-| RailFreight | [x] | [ ] |
-| RoadFreight | [x] | [ ] |
-| SeaFreight | [x] | [ ] |
-| Services | [x] | [ ] |
-| TermsConditions | [x] | [ ] |
-| Testimonials | [x] | [ ] |
-| TrackOrder | [x] | [ ] |
-| Warehousing | [x] | [ ] |
-| WoodTrading | [x] | [ ] |
-
-| Route | Original component present | Source styling code matches | Rendered visual QA |
-|---|---:|---:|---:|
-| Accessibility | [x] | [x] |[ ] |
-| AirFreight | [x] | [x] |[ ] |
-| Blog | [x] | [x] |[ ] |
-| BlogPostPage | [x] | [x] |[ ] |
-| CEOMessage | [x] | [x] |[ ] |
-| CarbonNeutral | [x] | [x] |[ ] |
-| Company | [x] | [x] |[ ] |
-| Contact | [x] | [x] |[ ] |
-| CookiesPolicy | [x] | [x] |[ ] |
-| CustomsClearance | [x] | [x] |[ ] |
-| DocumentAML | [x] | [x] |[ ] |
-| DocumentAudit2023 | [x] | [x] |[ ] |
-| DocumentAudit2024 | [x] | [x] |[ ] |
-| DocumentAudit2025 | [x] | [x] |[ ] |
-| DocumentCompliance | [x] | [x] |[ ] |
-| DocumentProhibited | [x] | [x] |[ ] |
-| DocumentRisk | [x] | [x] |[ ] |
-| DocumentSanctions | [x] | [x] |[ ] |
-| Documents | [x] | [x] |[ ] |
-| DomesticShipping | [x] | [x] |[ ] |
-| FourPL | [x] | [x] |[ ] |
-| GetQuote | [x] | [x] |[ ] |
-| GlobalNetwork | [x] | [x] |[ ] |
-| Home | [x] | [x] |[ ] |
-| MetalsTrading | [x] | [x] |[ ] |
-| PrivacyPolicy | [x] | [x] |[ ] |
-| Profile | [x] | [x] |[ ] |
-| ProjectLogistics | [x] | [x] |[ ] |
-| RailFreight | [x] | [x] |[ ] |
-| RoadFreight | [x] | [x] |[ ] |
-| SeaFreight | [x] | [x] |[ ] |
-| Services | [x] | [x] |[ ] |
-| TermsConditions | [x] | [x] |[ ] |
-| Testimonials | [x] | [x] |[ ] |
-| TrackOrder | [x] | [x] |[ ] |
-| Warehousing | [x] | [x] |[ ] |
-| WoodTrading | [x] | [x] |[ ] |
+| Accessibility | [x] | [x] | [ ] |
+| AirFreight | [x] | [x] | [ ] |
+| Blog | [x] | [x] | [ ] |
+| BlogPostPage | [x] | [x] | [ ] |
+| CEOMessage | [x] | [x] | [ ] |
+| CarbonNeutral | [x] | [x] | [ ] |
+| Company | [x] | [x] | [ ] |
+| Contact | [x] | [x] | [ ] |
+| CookiesPolicy | [x] | [x] | [ ] |
+| CustomsClearance | [x] | [x] | [ ] |
+| DocumentAML | [x] | [x] | [ ] |
+| DocumentAudit2023 | [x] | [x] | [ ] |
+| DocumentAudit2024 | [x] | [x] | [ ] |
+| DocumentAudit2025 | [x] | [x] | [ ] |
+| DocumentCompliance | [x] | [x] | [ ] |
+| DocumentProhibited | [x] | [x] | [ ] |
+| DocumentRisk | [x] | [x] | [ ] |
+| DocumentSanctions | [x] | [x] | [ ] |
+| Documents | [x] | [x] | [ ] |
+| DomesticShipping | [x] | [x] | [ ] |
+| FourPL | [x] | [x] | [ ] |
+| GetQuote | [x] | [x] | [ ] |
+| GlobalNetwork | [x] | [x] | [ ] |
+| Home | [x] | [x] | [ ] |
+| MetalsTrading | [x] | [x] | [ ] |
+| PrivacyPolicy | [x] | [x] | [ ] |
+| Profile | [x] | [x] | [ ] |
+| ProjectLogistics | [x] | [x] | [ ] |
+| RailFreight | [x] | [x] | [ ] |
+| RoadFreight | [x] | [x] | [ ] |
+| SeaFreight | [x] | [x] | [ ] |
+| Services | [x] | [x] | [ ] |
+| TermsConditions | [x] | [x] | [ ] |
+| Testimonials | [x] | [x] | [ ] |
+| TrackOrder | [x] | [x] | [ ] |
+| Warehousing | [x] | [x] | [ ] |
+| WoodTrading | [x] | [x] | [ ] |
 
 ## Image-by-image source inventory
 
