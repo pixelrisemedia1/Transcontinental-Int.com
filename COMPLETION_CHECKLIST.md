@@ -215,9 +215,12 @@ The transferred source references 85 Unsplash image URLs across 55 distinct phot
 - [x] Active application code contains no Base44 SDK imports, Base44 API calls, Base44-hosted media URLs, Base44 auth/database wiring, or Base44 backend scaffold. The full source scan found only checklist/workflow documentation references.
 - [x] The exact three audit PDFs and four policy PDFs referenced by source are stored in `public/assets/documents/`; the source's HTML-only Compliance Policy route remains HTML without a PDF.
 - [x] GitHub Actions production build and Pages artifact upload succeeded on the migration branch.
-- [ ] Final Pages deployment for the latest main commit succeeds; open the deployed site and verify the returned Pages URL.
+- [x] GitHub Actions build and Pages deployment succeeded for code commit `01bdcf6a326cf77b0a3d7b5ce6bdbdecf46c095c`; deployment output reports `https://pixelrisemedia1.github.io/Transcontinental-Int.com/`.
+- [ ] Open the deployed Pages URL in a browser and verify all routes and assets. The copy has not been visually reviewed in the browser, so rendered-route parity remains unchecked.
 - [ ] Compare all route visuals, the source image placements/crops, responsive layouts, and direct-route refreshes on the deployed site.
 - [ ] Verify quote/contact mailto handoff in a browser; delivery is not server-backed.
 - [ ] Verify the static tracking limitation is clear and no tracking result is fabricated.
 - [ ] Decide and configure a real server-backed login/form inbox only if account sign-in or cross-device storage is required; current profile/drafts are browser-local.
 - [ ] Confirm custom domain/DNS when the user is ready; deferred by request.
+
+- [x] Added a local TC brand favicon and set the matching dark theme color in `index.html`; latest successful production build/deployment includes it.
