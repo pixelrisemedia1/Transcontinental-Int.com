@@ -89,7 +89,7 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Verified source PDF destinations are Base44-hosted for 2023/2024/2025 audit reports, AML policy, Prohibited Cargo Policy, Risk Assessment Policy and Sanctions Compliance Policy. These exact files must be acquired from authorized source and stored locally before removing Base44 references.
 - [x] Fargo source product routes also inspected separately (inventory belongs in Fargo checklist).
 - [x] Acquire and locally host the three audit PDFs and four policy PDFs referenced by the source.
-- [ ] Compare each local PDF's filename, version, page count, contents and public open/download behavior against the source.
+- [ ] Compare each local PDF's filename, version, page count, contents and public open/download behavior against the source. `DocumentCompliance` intentionally has no attached PDF in the source and is restored as source HTML.
 - [ ] Inspect remaining document and legal text, embedded media, images and every route against source; no Base44 URL or runtime may remain.
 
 
