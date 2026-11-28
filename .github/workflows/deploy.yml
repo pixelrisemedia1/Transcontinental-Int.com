@@ -1,9 +1,7 @@
-name: Deploy site to GitHub Pages
+name: Build and deploy site to GitHub Pages
 on:
   push:
-    branches: [main]
-    paths-ignore:
-      - ".github/workflows/**"
+    branches: [main, tcl-base44-transfer]
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,23 +11,28 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - name: Add SPA route fallback
+        run: cp dist/index.html dist/404.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
   deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - name: Prepare independent static site
-        run: |
-          mkdir -p site-dist/assets
-          cp index.html site-dist/index.html
-          cp assets/* site-dist/assets/
-          cp site-dist/index.html site-dist/404.html
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site-dist
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v4
+        id: deployment
