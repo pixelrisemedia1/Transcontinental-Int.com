@@ -105,10 +105,10 @@ Rule: Check an item only after comparing against the source or testing the publi
 
 ## Complete source route and visual review matrix
 
-All 37 registered page components are present in the transferred source and included in the React route registry. The source-code-presence check is complete; the visual comparison remains unchecked until each route has been opened at matching desktop/mobile widths.
+All 37 registered page components are present in the transferred source and included in the React route registry. Code comparison (2026-11-28): all 37 registered page components retain the source `className` and inline-style values. The shared page layout, global/index CSS, route registry, page hero, section heading, home hero, footer and top bar match the Base44 source. The mobile navbar account link's missing `w-full` class was restored. Rendered desktop/tablet/mobile screenshot comparison is still pending.
 
-| Route | Original component present | Visual/source parity |
-|---|---:|---:|
+| Route | Original component present | Source styling code matches | Rendered visual QA |
+|---|---:|---:|---:|
 | Accessibility | [x] | [ ] |
 | AirFreight | [x] | [ ] |
 | Blog | [x] | [ ] |
@@ -146,6 +146,46 @@ All 37 registered page components are present in the transferred source and incl
 | TrackOrder | [x] | [ ] |
 | Warehousing | [x] | [ ] |
 | WoodTrading | [x] | [ ] |
+
+| Route | Original component present | Source styling code matches | Rendered visual QA |
+|---|---:|---:|---:|
+| Accessibility | [x] | [x] |[ ] |
+| AirFreight | [x] | [x] |[ ] |
+| Blog | [x] | [x] |[ ] |
+| BlogPostPage | [x] | [x] |[ ] |
+| CEOMessage | [x] | [x] |[ ] |
+| CarbonNeutral | [x] | [x] |[ ] |
+| Company | [x] | [x] |[ ] |
+| Contact | [x] | [x] |[ ] |
+| CookiesPolicy | [x] | [x] |[ ] |
+| CustomsClearance | [x] | [x] |[ ] |
+| DocumentAML | [x] | [x] |[ ] |
+| DocumentAudit2023 | [x] | [x] |[ ] |
+| DocumentAudit2024 | [x] | [x] |[ ] |
+| DocumentAudit2025 | [x] | [x] |[ ] |
+| DocumentCompliance | [x] | [x] |[ ] |
+| DocumentProhibited | [x] | [x] |[ ] |
+| DocumentRisk | [x] | [x] |[ ] |
+| DocumentSanctions | [x] | [x] |[ ] |
+| Documents | [x] | [x] |[ ] |
+| DomesticShipping | [x] | [x] |[ ] |
+| FourPL | [x] | [x] |[ ] |
+| GetQuote | [x] | [x] |[ ] |
+| GlobalNetwork | [x] | [x] |[ ] |
+| Home | [x] | [x] |[ ] |
+| MetalsTrading | [x] | [x] |[ ] |
+| PrivacyPolicy | [x] | [x] |[ ] |
+| Profile | [x] | [x] |[ ] |
+| ProjectLogistics | [x] | [x] |[ ] |
+| RailFreight | [x] | [x] |[ ] |
+| RoadFreight | [x] | [x] |[ ] |
+| SeaFreight | [x] | [x] |[ ] |
+| Services | [x] | [x] |[ ] |
+| TermsConditions | [x] | [x] |[ ] |
+| Testimonials | [x] | [x] |[ ] |
+| TrackOrder | [x] | [x] |[ ] |
+| Warehousing | [x] | [x] |[ ] |
+| WoodTrading | [x] | [x] |[ ] |
 
 ## Image-by-image source inventory
 
