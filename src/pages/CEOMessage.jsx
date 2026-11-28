@@ -30,7 +30,7 @@ export default function CEOMessage() {
               "We don't just move cargo; we move businesses forward."
             </blockquote>
             <div className="mt-8 flex items-center justify-center gap-4">
-              <img src="/Transcontinental-Int.com/assets/TC_Nikolai.png" alt="Nikolai Belov" className="w-16 h-16 rounded-full object-cover border-2 border-cyan-400/30" />
+              <img src={import.meta.env.BASE_URL + "assets/TC_Nikolai.png"} alt="Nikolai Belov" className="w-16 h-16 rounded-full object-cover border-2 border-cyan-400/30" />
               <div className="text-left">
                 <p className="text-white font-semibold text-lg">Nikolai Belov</p>
                 <p className="text-cyan-400 text-sm">Chief Operating Officer (COO), TransContinental Group International</p>
