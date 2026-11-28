@@ -260,8 +260,8 @@ export default function Navbar() {
               </>
             ) : (
               <Link to={createPageUrl("Profile")} className="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-300 hover:text-white transition-all">
-                <User className="w-4 h-4 text-cyan-400" />
-                My Account
+                <LogIn className="w-4 h-4 text-cyan-400" />
+                Login / Sign Up
               </Link>
             )}
           </div>
@@ -310,7 +310,7 @@ export default function Navbar() {
               <div className="pt-3 border-t border-gray-800 space-y-2">
                 {!isAuthenticated ? (
                   <Link to={createPageUrl("Profile")} onClick={() => setMobileOpen(false)} className="flex items-center gap-2 text-gray-400 hover:text-white text-sm px-4 py-2">
-                    <User className="w-4 h-4" /> My Account
+                    <LogIn className="w-4 h-4" /> Login / Sign Up
                   </Link>
                 ) : (
                   <>
