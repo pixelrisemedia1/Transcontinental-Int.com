@@ -149,7 +149,7 @@ All 37 registered page components are present in the transferred source and incl
 
 ## Image-by-image source inventory
 
-The transferred source references 85 Unsplash image URLs across 56 distinct photo IDs. The original URLs and source page placements are retained. The COO portrait is locally hosted. No video URL, video file, video embed or poster was found in the 131 inspected text/source files.
+The transferred source references 85 Unsplash image URLs across 55 distinct photo IDs. The original URLs and source page placements are retained. The COO portrait is locally hosted. No video URL, video file, video embed or poster was found in the 131 inspected text/source files.
 
 | Image source ID | Source page/component placements | Visual and responsive check |
 |---|---|---:|
