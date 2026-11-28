@@ -30,14 +30,14 @@ export default function RailFreight() {
       <PageHero
         title="Rail Freight"
         subtitle="High-speed, cost-effective rail logistics connecting Europe and Asia across major corridors."
-        image="https://images.unsplash.com/photo-1501704163333-86d3832cd4ea?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1501704163333-86d3832cd4ea.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-4">
-              <SiteImg imageKey="rail_freight_1" fallback="https://images.unsplash.com/photo-1622340973965-6370cd932bd7?w=800&q=80" alt="Railroad tracks" className="rounded-2xl w-full h-64 object-cover" />
-              <SiteImg imageKey="rail_freight_3" fallback="https://images.unsplash.com/photo-1596245296613-cfcdd8490086?w=800&q=80" alt="Railroad tracks through trees" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="rail_freight_1" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1622340973965-6370cd932bd7.jpg" alt="Railroad tracks" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="rail_freight_3" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1596245296613-cfcdd8490086.jpg" alt="Railroad tracks through trees" className="rounded-2xl w-full h-64 object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold text-cyan-500 uppercase tracking-widest">Rail Logistics</span>

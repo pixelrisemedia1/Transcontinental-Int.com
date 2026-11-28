@@ -54,7 +54,7 @@ export default function Profile() {
 
   return (
     <div>
-      <PageHero title="My Account" subtitle="Manage your profile, preferences, and shipment history." image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" />
+      <PageHero title="My Account" subtitle="Manage your profile, preferences, and shipment history." image="/Transcontinental-Int.com/assets/unsplash/photo-1497366216548-37526070297c.jpg" />
 
       <section className="py-16 bg-gray-50 min-h-screen">
         <div className="max-w-5xl mx-auto px-4 md:px-8">

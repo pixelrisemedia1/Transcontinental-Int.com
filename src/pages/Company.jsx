@@ -27,7 +27,7 @@ export default function Company() {
       <PageHero
         title="About Us"
         subtitle="Developing and implementing complex solutions in multimodal transportation since establishment."
-        image="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1601584115197-04ecc0da31d7.jpg"
       />
 
       {/* Company Info */}

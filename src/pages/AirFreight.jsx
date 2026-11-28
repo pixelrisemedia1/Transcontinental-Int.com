@@ -29,14 +29,14 @@ export default function AirFreight() {
       <PageHero
         title="Air Freight"
         subtitle="Fast, flexible, and reliable air cargo solutions connecting the world's major trade hubs."
-        image="https://images.unsplash.com/photo-1569154941061-e231b4aa8da2?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1569154941061-e231b4aa8da2.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-4 order-2 lg:order-1">
-              <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800&q=80" alt="Air cargo loading" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&q=80" alt="Cargo aircraft" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1556388158-158ea5ccacbd.jpg" alt="Air cargo loading" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1464037866556-6812c9d1c72e.jpg" alt="Cargo aircraft" className="rounded-2xl w-full h-64 object-cover" />
             </div>
             <div className="order-1 lg:order-2">
               <span className="text-xs font-bold text-cyan-500 uppercase tracking-widest">Air Logistics</span>

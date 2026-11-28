@@ -11,28 +11,28 @@ const REGIONS = [
     name: "Asia Pacific",
     hq: "Hong Kong SAR",
     offices: ["Hong Kong", "Shanghai", "Singapore", "Tokyo"],
-    image: "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=600&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1536599018102-9f803c140fc1.jpg",
     desc: "Our Asia Pacific hub is headquartered in Hong Kong, serving as the command center for all Far East operations, sea freight management, and commodity trading.",
   },
   {
     name: "North America",
     hq: "New York, USA",
     offices: ["New York", "Los Angeles", "Chicago"],
-    image: "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=600&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1485871981521-5b1fd3805eee.jpg",
     desc: "Our North American presence handles trans-Pacific and trans-Atlantic trade lanes, supporting both import and export freight for US-based clients.",
   },
   {
     name: "Europe",
     hq: "London, UK",
     offices: ["London", "Amsterdam", "Frankfurt", "Warsaw"],
-    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1467269204594-9661b134dd2b.jpg",
     desc: "Our European network covers major trade corridors between Europe and Asia, supporting rail freight on the New Silk Road and sea freight across the Atlantic.",
   },
   {
     name: "Middle East & Africa",
     hq: "Dubai, UAE",
     offices: ["Dubai", "Nairobi", "Johannesburg"],
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1512453979798-5ea266f8880c.jpg",
     desc: "Growing presence in MENA and Sub-Saharan Africa serving emerging trade routes with commodities, project cargo, and general freight solutions.",
   },
 ];
@@ -50,7 +50,7 @@ export default function GlobalNetwork() {
       <PageHero
         title="Global Network"
         subtitle="Offices on four continents and a partner network spanning over 20 countries worldwide."
-        image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1451187580459-43490279c0fa.jpg"
       />
 
       <section className="py-24 bg-white">

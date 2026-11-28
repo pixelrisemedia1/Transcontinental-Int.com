@@ -30,7 +30,7 @@ export default function SeaFreight() {
       <PageHero
         title="Sea Freight"
         subtitle="World-class container shipping solutions connecting every major trade route globally."
-        image="https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1724597500306-a4cbb7d1324e.jpg"
       />
 
       <section className="py-24 bg-white">
@@ -51,8 +51,8 @@ export default function SeaFreight() {
               </ul>
             </div>
             <div className="space-y-4">
-              <SiteImg imageKey="sea_freight_3" fallback="https://images.unsplash.com/photo-1696287146802-af8ccce45601?w=800&q=80" alt="Large cargo ship in open ocean" className="rounded-2xl w-full h-64 object-cover" />
-              <SiteImg imageKey="sea_freight_4" fallback="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80" alt="Intermodal containers on dock" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="sea_freight_3" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1696287146802-af8ccce45601.jpg" alt="Large cargo ship in open ocean" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="sea_freight_4" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1494412574643-ff11b0a5c1c3.jpg" alt="Intermodal containers on dock" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

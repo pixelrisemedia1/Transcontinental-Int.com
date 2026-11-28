@@ -22,7 +22,7 @@ export default function ProjectLogistics() {
       <PageHero
         title="Project Logistics"
         subtitle="Complex cargo movements managed end-to-end by dedicated project logistics specialists."
-        image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1541888946425-d81bb19240f5.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -42,8 +42,8 @@ export default function ProjectLogistics() {
               </ul>
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Heavy machinery logistics" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Large scale construction project cargo" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1504307651254-35680f356dfd.jpg" alt="Heavy machinery logistics" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1541888946425-d81bb19240f5.jpg" alt="Large scale construction project cargo" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
           <div className="bg-[#111827] rounded-3xl p-10 md:p-16 text-center">

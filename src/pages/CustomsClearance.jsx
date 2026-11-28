@@ -22,14 +22,14 @@ export default function CustomsClearance() {
       <PageHero
         title="Customs Clearance"
         subtitle="Expert customs management ensuring your goods cross borders without delay."
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1450101499163-c8848c66ca85.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" alt="Person signing customs documents" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80" alt="Trade documents and paperwork" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1450101499163-c8848c66ca85.jpg" alt="Person signing customs documents" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1554224155-8d04cb21cd6c.jpg" alt="Trade documents and paperwork" className="rounded-2xl w-full h-64 object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold text-cyan-500 uppercase tracking-widest">Border Compliance</span>

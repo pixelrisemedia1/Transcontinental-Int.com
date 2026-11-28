@@ -29,7 +29,7 @@ export default function DomesticShipping() {
       <PageHero
         title="Domestic & Coastal Shipping"
         subtitle="Integrated domestic freight solutions combining sea, road, and rail for comprehensive coverage."
-        image="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1578575437130-527eed3abbec.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -49,8 +49,8 @@ export default function DomesticShipping() {
               </ul>
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80" alt="Container dock port" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=800&q=80" alt="Domestic freight truck delivery" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1494412574643-ff11b0a5c1c3.jpg" alt="Container dock port" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1516738901171-8eb4fc13bd20.jpg" alt="Domestic freight truck delivery" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

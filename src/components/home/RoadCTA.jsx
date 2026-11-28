@@ -8,7 +8,7 @@ export default function RoadCTA() {
     <section className="relative py-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1519003300449-424ad0405076?w=1920&q=80"
+          src="/Transcontinental-Int.com/assets/unsplash/photo-1519003300449-424ad0405076.jpg"
           alt=""
           className="w-full h-full object-cover"
         />

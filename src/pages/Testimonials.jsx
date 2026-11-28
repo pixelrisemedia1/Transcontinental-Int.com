@@ -129,7 +129,7 @@ export default function Testimonials() {
 
   return (
     <div>
-      <PageHero title="Client Testimonials" subtitle="What our clients say about working with TransContinental Group International." image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80" />
+      <PageHero title="Client Testimonials" subtitle="What our clients say about working with TransContinental Group International." image="/Transcontinental-Int.com/assets/unsplash/photo-1521737604893-d14cc237f11d.jpg" />
       {showWrite && <WriteTestimonialModal onClose={() => setShowWrite(false)} onSaved={() => { setShowWrite(false); loadTestimonials(); }} />}
 
       <div className="bg-[#111827] py-10">

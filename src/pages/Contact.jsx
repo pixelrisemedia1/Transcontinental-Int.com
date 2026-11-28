@@ -32,7 +32,7 @@ export default function Contact() {
       <PageHero
         title="Contact Us"
         subtitle="Get in touch with our team for inquiries, support, or partnerships."
-        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1423666639041-f56000c27a9a.jpg"
       />
 
       <section className="py-24 bg-white">

@@ -21,7 +21,7 @@ export default function DocumentPageLayout({ title, subtitle, pdfUrl, children }
       <PageHero
         title={title}
         subtitle={subtitle}
-        image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1554224155-6726b3ff858f.jpg"
       />
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-8">

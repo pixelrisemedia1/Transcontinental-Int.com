@@ -18,7 +18,7 @@ export default function TrackOrder() {
       <PageHero
         title="Track Your Order"
         subtitle="Enter your tracking number to get real-time updates on your shipment."
-        image="https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1494412574643-ff11b0a5eb19.jpg"
       />
 
       <section className="py-24 bg-white">

@@ -30,7 +30,7 @@ export default function RoadFreight() {
       <PageHero
         title="Road Freight"
         subtitle="End-to-end road freight solutions connecting businesses across continents."
-        image="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1601584115197-04ecc0da31d7.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -50,8 +50,8 @@ export default function RoadFreight() {
               </ul>
             </div>
             <div className="space-y-4">
-              <SiteImg imageKey="road_freight_1" fallback="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80" alt="Semi truck fleet on highway" className="rounded-2xl w-full h-64 object-cover" />
-              <SiteImg imageKey="road_freight_3" fallback="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&q=80" alt="Cargo truck on open highway" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="road_freight_1" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1601584115197-04ecc0da31d7.jpg" alt="Semi truck fleet on highway" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="road_freight_3" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1519003722824-194d4455a60c.jpg" alt="Cargo truck on open highway" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

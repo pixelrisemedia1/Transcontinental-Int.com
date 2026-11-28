@@ -82,7 +82,7 @@ export default function Services() {
       <PageHero
         title="Our Services"
         subtitle="Comprehensive freight and trading solutions spanning every major trade route worldwide."
-        image="https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1436491865332-7a61a109db05.jpg"
       />
 
       {/* Commercial Cargo */}
@@ -91,7 +91,7 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=800&q=80"
+                src="/Transcontinental-Int.com/assets/unsplash/photo-1570710891163-6d3b5c47248b.jpg"
                 alt="Cargo"
                 className="w-full h-80 object-cover"
               />

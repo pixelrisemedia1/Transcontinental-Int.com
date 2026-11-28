@@ -37,7 +37,7 @@ export default function DomesticSection() {
             className="rounded-2xl overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?w=800&q=80"
+              src="/Transcontinental-Int.com/assets/unsplash/photo-1619468129361-605ebea04b44.jpg"
               alt="Coastal shipping"
               className="w-full h-80 object-cover"
             />

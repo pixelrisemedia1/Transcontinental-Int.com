@@ -29,7 +29,7 @@ export default function FourPL() {
       <PageHero
         title="4PL Logistics"
         subtitle="Fully integrated fourth-party logistics management delivering end-to-end supply chain oversight."
-        image="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1520607162513-77705c0f0d4a.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -49,8 +49,8 @@ export default function FourPL() {
               </ul>
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Supply chain management" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Analytics dashboard" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1454165804606-c3d57bc86b40.jpg" alt="Supply chain management" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1460925895917-afdab827c52f.jpg" alt="Analytics dashboard" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

@@ -30,7 +30,7 @@ export default function WoodTrading() {
       <PageHero
         title="Wood Trading"
         subtitle="Premium timber and wood product sourcing from global sustainable markets."
-        image="https://images.unsplash.com/photo-1587371169587-0ad13dea4be2?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1587371169587-0ad13dea4be2.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -50,8 +50,8 @@ export default function WoodTrading() {
               </ul>
             </div>
             <div className="space-y-4">
-              <SiteImg imageKey="wood_trading_3" fallback="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&q=80" alt="Forest timber trees" className="rounded-2xl w-full h-64 object-cover" />
-              <SiteImg imageKey="wood_trading_6" fallback="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Pine forest timber" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="wood_trading_3" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1513836279014-a89f7a76ae86.jpg" alt="Forest timber trees" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="wood_trading_6" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1448375240586-882707db888b.jpg" alt="Pine forest timber" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

@@ -29,7 +29,7 @@ export default function CarbonNeutral() {
       <PageHero
         title="Carbon Neutral Shipping"
         subtitle="Offsetting the environmental impact of your logistics with certified carbon reduction programs."
-        image="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1448375240586-882707db888b.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -49,8 +49,8 @@ export default function CarbonNeutral() {
               </ul>
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80" alt="Sustainable logistics" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Forest conservation" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1497435334941-8c899ee9e8e9.jpg" alt="Sustainable logistics" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1441974231531-c6227db76b6e.jpg" alt="Forest conservation" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
 

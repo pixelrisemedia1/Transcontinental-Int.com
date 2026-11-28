@@ -8,7 +8,7 @@ export default function QuoteCallout() {
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=1920&q=80"
+          src="/Transcontinental-Int.com/assets/unsplash/photo-1570710891163-6d3b5c47248b.jpg"
           alt=""
           className="w-full h-full object-cover"
         />

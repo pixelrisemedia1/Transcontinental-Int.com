@@ -30,14 +30,14 @@ export default function MetalsTrading() {
       <PageHero
         title="Metals Trading"
         subtitle="Global ferrous and non-ferrous metals trading with expert logistics and compliance."
-        image="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1567789884554-0b844b597180.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div className="space-y-4">
-              <SiteImg imageKey="metals_trading_1" fallback="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Steel rods and bars" className="rounded-2xl w-full h-64 object-cover" />
-              <SiteImg imageKey="metals_trading_4" fallback="https://images.unsplash.com/photo-1528918652533-dfdb3f368093?w=800&q=80" alt="Person melting iron metal" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="metals_trading_1" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1504328345606-18bbc8c9d7d1.jpg" alt="Steel rods and bars" className="rounded-2xl w-full h-64 object-cover" />
+              <SiteImg imageKey="metals_trading_4" fallback="/Transcontinental-Int.com/assets/unsplash/photo-1528918652533-dfdb3f368093.jpg" alt="Person melting iron metal" className="rounded-2xl w-full h-64 object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold text-cyan-500 uppercase tracking-widest">Metals & Commodities</span>

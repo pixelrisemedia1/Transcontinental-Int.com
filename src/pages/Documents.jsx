@@ -87,7 +87,7 @@ export default function Documents() {
       <PageHero
         title="Documents"
         subtitle="Transparency, compliance, and accountability across all global operations."
-        image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1554224155-6726b3ff858f.jpg"
       />
 
       <section className="py-24 bg-white">

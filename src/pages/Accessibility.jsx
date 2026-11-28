@@ -19,7 +19,7 @@ export default function Accessibility() {
       <PageHero
         title="Accessibility"
         subtitle="We are committed to ensuring our website is accessible to everyone."
-        image="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1573164713988-8665fc963095.jpg"
       />
 
       <section className="py-24 bg-white">

@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - name: Restore local Unsplash images
+        run: |
+          cat migration/tc-unsplash.tar.gz.part-* > /tmp/tc-unsplash.tar.gz
+          mkdir -p public/assets/unsplash
+          tar -xzf /tmp/tc-unsplash.tar.gz -C public/assets/unsplash
       - run: npm run build
       - name: Add SPA route fallback
         run: cp dist/index.html dist/404.html

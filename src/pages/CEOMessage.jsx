@@ -11,7 +11,7 @@ export default function CEOMessage() {
       <PageHero
         title="Message from Our COO"
         subtitle="A personal message from Nikolai Belov, Chief Operating Officer (COO) of TransContinental Group International."
-        image="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1497366811353-6870744d04b2.jpg"
       />
 
       <section className="py-20 bg-white">

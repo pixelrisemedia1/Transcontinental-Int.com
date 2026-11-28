@@ -29,7 +29,7 @@ export default function Warehousing() {
       <PageHero
         title="Warehousing"
         subtitle="Strategically located warehouses worldwide providing secure, efficient storage and distribution."
-        image="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1587293852726-70cdb56c2866.jpg"
       />
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -49,8 +49,8 @@ export default function Warehousing() {
               </ul>
             </div>
             <div className="space-y-4">
-              <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80" alt="Warehouse interior" className="rounded-2xl w-full h-64 object-cover" />
-              <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80" alt="Warehouse operations" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1553413077-190dd305871c.jpg" alt="Warehouse interior" className="rounded-2xl w-full h-64 object-cover" />
+              <img src="/Transcontinental-Int.com/assets/unsplash/photo-1587293852726-70cdb56c2866.jpg" alt="Warehouse operations" className="rounded-2xl w-full h-64 object-cover" />
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24">

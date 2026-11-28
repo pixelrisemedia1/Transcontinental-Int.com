@@ -8,17 +8,17 @@ const SLIDES = [
   {
     title: "Bridge continents.\nDeliver opportunities.",
     subtitle: "Cost-efficient container shipping with reliable routes and worldwide partners.",
-    image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1920&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1605745341112-85968b19335b.jpg",
   },
   {
     title: "Fast and secure\ndelivery. Every time.",
     subtitle: "From door to door, we handle your packages with care and speed.",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1578575437130-527eed3abbec.jpg",
   },
   {
     title: "Your cargo in\ntrusted hands.",
     subtitle: "Express air freight across continents with guaranteed safety and full compliance.",
-    image: "https://images.unsplash.com/photo-1529260830199-42c24126f198?w=1920&q=80",
+    image: "/Transcontinental-Int.com/assets/unsplash/photo-1529260830199-42c24126f198.jpg",
   },
 ];
 

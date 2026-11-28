@@ -71,7 +71,7 @@ export default function GetQuote() {
   if (submitted) {
     return (
       <div>
-        <PageHero title="Quote Submitted" image="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80" />
+        <PageHero title="Quote Submitted" image="/Transcontinental-Int.com/assets/unsplash/photo-1578575437130-527eed3abbec.jpg" />
         <div className="py-24 text-center max-w-xl mx-auto px-4">
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="inline-block">
             <CheckCircle2 className="w-20 h-20 text-green-500 mx-auto" />
@@ -91,7 +91,7 @@ export default function GetQuote() {
       <PageHero
         title={`Get a Quote (Step ${step}/3)`}
         subtitle="Fill in the details below and we'll provide you with a competitive quote."
-        image="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80"
+        image="/Transcontinental-Int.com/assets/unsplash/photo-1578575437130-527eed3abbec.jpg"
       />
 
       <section className="py-20 bg-white">
